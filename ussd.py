@@ -14,36 +14,37 @@ while True:
     if choice == "1":
         amount = float(input("Enter amount to deposit: "))
         if amount <= 0:
-            print("❌ Invalid amount! Please enter a positive number.")
+            print(" Invalid amount! Please enter a positive number.")
         else:
             balance += amount
-            print(f"✅ You have deposited {amount}. New balance: {balance}")
+            print(f" You have deposited {amount}. New balance: {balance}")
 
     elif choice == "2":
         amount = float(input("Kindly enter the amount to withdraw: "))
         if amount > balance:
-            print("❌ Insufficient funds!")
+            print(" Insufficient funds!")
         else:
             balance -= amount
-            print(f"✅ You have withdrawn {amount}. Remaining balance: {balance}")
+            print(f" You have withdrawn {amount}. Remaining balance: {balance}")
 
     elif choice == "3":
-        print(f"💰 Your current balance is: {balance}")
+        print(f" Your current balance is: {balance}")
 
     elif choice == "4":
         amount = float(input("Enter amount to save: "))
         if amount <= 0:
-            print("❌ Invalid amount! Please enter a positive number.")
+            print(" Invalid amount! Please enter a positive number.")
         elif amount > balance:
-            print("❌ Insufficient funds to save!")
+            print(" Insufficient funds to save!")
         else:
             balance -= amount
             savings += amount
-            print(f"✅ You saved {amount}. Savings: {savings}, Remaining balance: {balance}")
+            print(f" You saved {amount}. Savings: {savings}, Remaining balance: {balance}")
 
     elif choice == "5":
         print("👋🏽 Thank you for using ABDUL-RAFEEQ banking system!")
         break
 
     else:
+
         print("Invalid choice, please try again.")
