@@ -1,0 +1,7 @@
+streamlit
+spacy
+pandas
+scikit-learn
+# Add any other libraries you used, like:
+# xgboost
+# sentence-transformers
